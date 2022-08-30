@@ -4,7 +4,7 @@ import { CaretRight } from "phosphor-react-native";
 export function Time() {
     return(
         <View>
-            <View className="flex flex-row justify-between items-center px-7 pt-10 pb-4">
+            <View className="flex flex-row justify-between items-center px-[7.5%] pt-10 pb-4">
                 <Text className="font-semibold text-lg">Today</Text>
                 <View className="flex flex-row items-center">
                     <Text className="text-lg pr-4 text-gray-500">Next 7 Days</Text>

@@ -1,13 +1,11 @@
 import { Activity, Sun, ThermometerSimple, Wind } from "phosphor-react-native";
-import { Image, Text, View } from "react-native-web";
+import { Image, Text, View } from "react-native";
 
 export function Temperature() {
     return(
         <View className="px-[7.5%]">
             <Text className="py-6">
-                <Text className="font-semibold text-2xl">
-                    Bandung,
-                </Text>
+                <Text className="font-semibold text-2xl">Bandung,</Text>
                 <Text className="text-xl"> Indonesia</Text>
             </Text>
             <View className="flex items-center">
