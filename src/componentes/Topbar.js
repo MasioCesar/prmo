@@ -1,7 +1,7 @@
 import { DotsThree, List } from "phosphor-react-native";
 import { View } from "react-native-web";
 
-export function Header(){
+export function Topbar(){
     return(
         <View className="flex flex-row justify-between p-4">
             <List size={32} color="#100f0f" />

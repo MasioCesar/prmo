@@ -8,7 +8,6 @@ import { Week } from './src/telas/Week';
 
 export default function App() {
   return (
-    
     <TailwindProvider>
       <View>
         <StatusBar style="auto" />

@@ -1,12 +1,13 @@
 import { View } from "react-native-web";
-import { Header } from "../componentes/Header";
+import { Topbar } from "../componentes/Topbar";
 import { Temperature } from "../componentes/temperature";
 import { Time } from "../componentes/time";
+
 
 export function Home() {
     return(
         <View>
-            <Header />
+            <Topbar />
             <Temperature />
             <Time />
         </View>

@@ -47,9 +47,6 @@ export function Time() {
                         source={require('../../assets/sol.png')} />
                     <Text className="text-black py-1 text-lg font-semibold">31°</Text>
                 </View>
-
-
-
             </View>
         </View>
     )
