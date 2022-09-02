@@ -1,19 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
-import { StyleSheet } from 'react-native-web';
+
 import { TailwindProvider } from 'tailwindcss-react-native';
+
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
 import { Home } from './src/telas/Home';
 import { Week } from './src/telas/Week';
+
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     
     <TailwindProvider>
-      <View>
-        <StatusBar style="auto" />
-        <Home />
-      </View>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Week" component={Week} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </TailwindProvider>
 
     /*
@@ -26,10 +32,3 @@ export default function App() {
     */
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#4A73FC',
-  }
-});
