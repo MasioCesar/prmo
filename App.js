@@ -1,4 +1,3 @@
-
 import { TailwindProvider } from 'tailwindcss-react-native';
 
 import { createStackNavigator } from '@react-navigation/stack';
@@ -7,7 +6,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Home } from './src/telas/Home';
 import { Week } from './src/telas/Week';
 
-
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -15,7 +13,7 @@ export default function App() {
     
     <TailwindProvider>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Week" component={Week} />
         </Stack.Navigator>

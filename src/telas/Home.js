@@ -10,7 +10,7 @@ export function Home({navigation}) {
         <View>
             <Topbar />
             <Temperature />
-            <TouchableOpacity onPress={()=>navigation.navigate("Week")} activeOpacity={0.7}>
+            <TouchableOpacity onPress={()=>navigation.navigate("Week")}>
                 <Time />
             </TouchableOpacity>
         </View>

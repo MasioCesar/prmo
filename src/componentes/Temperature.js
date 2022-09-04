@@ -1,4 +1,5 @@
-import { Activity, Sun, ThermometerSimple, Wind } from "phosphor-react-native";
+import { FiSun, FiActivity, FiWind } from "react-icons/fi"
+import { BsThermometerHalf } from "react-icons/bs"
 import { Image, Text, View } from "react-native";
 import { CardsTemp } from "./CardsTemp";
 
@@ -18,12 +19,12 @@ export function Temperature() {
                     <Text className="text-white text-8xl p-6">24°</Text>
                     <View className="flex flex-row items-center w-full">
                         <View className="flex items-center w-[50%]">
-                            <CardsTemp  borderT={1} borderB={1} icon={Wind} weight="duotone" name="WIND" dados="19.2km/j" />
-                            <CardsTemp  icon={Sun} weight="light" name="INDEX UV" dados="2" />
+                            <CardsTemp  borderT={1} borderB={1} icon={FiWind} weight="duotone" name="WIND" dados="19.2km/j" />
+                            <CardsTemp  icon={FiSun} weight="light" name="INDEX UV" dados="2" />
                         </View>
                         <View className="flex items-center w-[50%]">
-                            <CardsTemp  borderT={1} borderB={1} borderL={1} icon={ThermometerSimple} weight="duotone" name="FEELS LIKE" dados="25°" />
-                            <CardsTemp  borderL={1} icon={Activity} weight="light" name="PRESSURE" dados="1014 mbar"/>
+                            <CardsTemp  borderT={1} borderB={1} borderL={1} icon={BsThermometerHalf} weight="duotone" name="FEELS LIKE" dados="25°" />
+                            <CardsTemp  borderL={1} icon={FiActivity} weight="light" name="PRESSURE" dados="1014 mbar"/>
                         </View>
                     </View>        
                 </View>

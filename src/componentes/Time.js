@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import { CaretRight } from "phosphor-react-native";
+import { AiOutlineRight } from "react-icons/ai"
 import { Cards } from "./Cards";
 
 export function Time() {
@@ -9,7 +9,7 @@ export function Time() {
                 <Text className="font-semibold text-lg">Today</Text>
                 <View className="flex flex-row items-center">
                     <Text className="text-lg pr-4 text-gray-500">Next 7 Days</Text>
-                    <CaretRight size={20} color="#696969" />
+                    <AiOutlineRight size={20} color="#696969" />
                 </View>
             </View>
 
